@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
+        transform.Translate(-5 * Time.deltaTime, 0, 0);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
