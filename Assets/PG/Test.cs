@@ -7,20 +7,42 @@ public class Test : MonoBehaviour
     public GameObject hitBox;
     public Transform Position;
 
-    float etime;
+    float reloadTime; // リロードにかかる時間
+    int bullets;
     // Start is called before the first frame update
     void Start()
     {
-        etime = 0;
+        bullets = 1;
+        reloadTime = 0.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        etime += Time.deltaTime;
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (reloadTime <= 0.0f)
         {
-            Instantiate(hitBox, Position.position, Position.rotation);
+            // マウス左クリック
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Instantiate(hitBox, Position.position, Position.rotation);
+   
+             // リロード時間セット
+             reloadTime = 1.0f;
+            }
+        }
+        else
+        // リロード中
+        {
+            // リロード時間カウントダウン
+            reloadTime -= Time.deltaTime;
+
+            // リロード時間が０秒以下になったら
+            if (reloadTime <= 0.0f)
+            {
+                // 弾を補充
+                bullets = 1;
+            }
         }
     }
 }
+
