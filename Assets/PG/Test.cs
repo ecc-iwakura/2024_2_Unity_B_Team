@@ -1,32 +1,54 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Test : MonoBehaviour
 {
     public GameObject Enemy;
-    public Transform Position;
-    public Transform Position2;
-    public Transform Position3;
+    public GameObject Enemy2;
+    public GameObject Enemy3;
+    public Transform[] spawnPoints; // 生成場所の配列
 
-    float etime;
+    private int r;
+    private int spawnIndex;
+
     // Start is called before the first frame update
     void Start()
     {
-        etime = 0;
+        StartCoroutine(Spawn());
     }
 
     // Update is called once per frame
     void Update()
     {
-        etime += Time.deltaTime;
 
-        if (etime > 0.25f)
+    }
+
+    private IEnumerator Spawn()
+    {
+        while (true)
         {
-            Instantiate(Enemy, Position.position, Position.rotation);
-            Instantiate(Enemy, Position2.position, Position2.rotation);
-            Instantiate(Enemy, Position3.position, Position3.rotation);
-            etime = 0;
+            r = Random.Range(1, 6); // 1から5までのランダムな整数を生成
+            spawnIndex = Random.Range(0, spawnPoints.Length); // 生成場所のランダムなインデックスを生成
+
+            if (r == 2)
+            {
+                Instantiate(Enemy, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation);
+            }
+            else if (r == 3)
+            {
+                Instantiate(Enemy2, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation);
+            }
+            else if (r == 4)
+            {
+                Instantiate(Enemy3, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation); // 新しいゲームオブジェクトを生成
+            }
+            else
+            {
+                // rが2, 3, 4以外の場合は何もしない
+            }
+
+            yield return new WaitForSeconds(1); // 1.5秒待機
         }
     }
 }
