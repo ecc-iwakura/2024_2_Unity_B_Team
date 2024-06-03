@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Test : MonoBehaviour
 {
     public GameObject hitBox;
-    public Transform FirePosition;
+    public Transform Position;
 
     float etime;
     // Start is called before the first frame update
@@ -18,13 +18,9 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         etime += Time.deltaTime;
-
-        if (etime > 0.25f)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(Bullet, FirePosition.position, FirePosition.rotation);
-            Instantiate(Bullet, FirePosition2.position, FirePosition2.rotation);
-            Instantiate(Bullet, FirePosition3.position, FirePosition3.rotation);
-            etime = 0;
+            Instantiate(hitBox, Position.position, Position.rotation);
         }
     }
 }
