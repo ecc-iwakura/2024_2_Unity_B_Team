@@ -48,7 +48,7 @@ public class Test : MonoBehaviour
                 // r‚ª2, 3, 4ˆÈŠO‚Ìê‡‚Í‰½‚à‚µ‚È‚¢
             }
 
-            yield return new WaitForSeconds(1); // 1.5•b‘Ò‹@
+            yield return new WaitForSeconds(1f); // 1.5•b‘Ò‹@
         }
     }
 }
