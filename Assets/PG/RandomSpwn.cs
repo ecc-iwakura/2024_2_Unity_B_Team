@@ -28,7 +28,7 @@ public class RandomSpwn : MonoBehaviour
     {
         while (true)
         {
-            r = Random.Range(1, 3); // 1か4までのランダムな整数を生成
+            r = Random.Range(1, 4); // 1か3までのランダムな整数を生成
             spawnIndex = Random.Range(0, spawnPoints.Length); // 生成場所のランダムなインデックスを生成
 
             switch (r)
