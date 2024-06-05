@@ -102,7 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 0.5
   speed: 10
-  lifeTime: 15
+  lifeTime: 10
 --- !u!114 &9028587364704260610
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -626,6 +626,9 @@ MonoBehaviour:
   Enemy: {fileID: 9028587364704260619, guid: 60457c4fe98b6f640bc36dfe3e909e79, type: 3}
   Enemy2: {fileID: 8253432632240183630, guid: da867ff1cb85e3d4c814e611eb495e55, type: 3}
   Enemy3: {fileID: 8253432632240183630, guid: b8ee5a59abe119c4c917cc28fbfc7f80, type: 3}
+  Enemy4: {fileID: 1637645937391729437, guid: 31b9516d91084884c80d837941c3bf0f, type: 3}
+  Enemy5: {fileID: 6744485071741730597, guid: a2084fe2f2a5b074d9312173cd3e5d9f, type: 3}
+  Enemy6: {fileID: 1050717994703556527, guid: 6e9fb32af6b675148b7a93455fc905e5, type: 3}
   spawnPoints:
   - {fileID: 1042800978}
   - {fileID: 1986188764}

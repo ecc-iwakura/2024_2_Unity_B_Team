@@ -7,6 +7,9 @@ public class RandomSpwn : MonoBehaviour
     public GameObject Enemy;
     public GameObject Enemy2;
     public GameObject Enemy3;
+    public GameObject Enemy4;
+    public GameObject Enemy5;
+    public GameObject Enemy6;
     public Transform[] spawnPoints; // 生成場所の配列
 
     private int r;
@@ -28,7 +31,7 @@ public class RandomSpwn : MonoBehaviour
     {
         while (true)
         {
-            r = Random.Range(1, 4); // 1か3までのランダムな整数を生成
+            r = Random.Range(1, 7); // 1か3までのランダムな整数を生成
             spawnIndex = Random.Range(0, spawnPoints.Length); // 生成場所のランダムなインデックスを生成
 
             switch (r)
@@ -43,6 +46,18 @@ public class RandomSpwn : MonoBehaviour
                     break;
                 case 3:
                     Instantiate(Enemy3, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation); // 新しいゲームオブジェクトを生成
+
+                    break;
+                case 4:
+                    Instantiate(Enemy4, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation); // 新しいゲームオブジェクトを生成
+
+                    break;
+                case 5:
+                    Instantiate(Enemy5, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation); // 新しいゲームオブジェクトを生成
+
+                    break;
+                case 6:
+                    Instantiate(Enemy6, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation); // 新しいゲームオブジェクトを生成
 
                     break;
             }
