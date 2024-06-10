@@ -4,7 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - hit box
+  - hitBox
+  - Enemy1
+  - Enemy2
+  - Enemy3
   layers:
   - Default
   - TransparentFX
