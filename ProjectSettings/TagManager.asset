@@ -8,6 +8,9 @@ TagManager:
   - Enemy1
   - Enemy2
   - Enemy3
+  - hit box
+  - Life
+  - Enemy_deathBox
   layers:
   - Default
   - TransparentFX
@@ -44,4 +47,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: New Layer 1
+    uniqueID: 2724624769
+    locked: 0
+  - name: New Layer 2
+    uniqueID: 2119729589
+    locked: 0
+  - name: New Layer 3
+    uniqueID: 91432837
     locked: 0
