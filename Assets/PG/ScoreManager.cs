@@ -12,6 +12,7 @@ public class ScoreManager : MonoBehaviour
     // ‰Šú‰»
     void Start()
     {
+
     }
 
     // XV
