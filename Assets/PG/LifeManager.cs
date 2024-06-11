@@ -23,7 +23,7 @@ public class LifeManager : MonoBehaviour
 
             if (lifePoint <= 0)
             {
-                SceneManager.LoadScene("gameover");
+                SceneManager.LoadScene("Lesult");
             }
         }
     }
@@ -38,8 +38,9 @@ public class LifeManager : MonoBehaviour
 
             if (lifePoint <= 0)
             {
-                SceneManager.LoadScene("gameover");
+                SceneManager.LoadScene("Lesult");
             }
+
         }
     }
 }
