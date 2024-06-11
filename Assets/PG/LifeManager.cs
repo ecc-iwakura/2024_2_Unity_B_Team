@@ -11,8 +11,24 @@ public class LifeManager : MonoBehaviour
 
     void Start()
     {
-        
+
     }
+    private void Update()
+    {
+        if (Enemy.des == true)
+        {
+            lifeArray[lifePoint - 1].SetActive(false);
+            lifePoint--;
+            Enemy.des = false;
+
+            if (lifePoint <= 0)
+            {
+                SceneManager.LoadScene("gameover");
+            }
+        }
+    }
+
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemy1" || collision.gameObject.tag == "Enemy2" || collision.gameObject.tag == "Enemy3")

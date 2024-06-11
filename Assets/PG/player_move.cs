@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 // using UnityEngine.Windows;
 
 public class player_move : MonoBehaviour
@@ -34,7 +35,6 @@ public class player_move : MonoBehaviour
                 MoveByIndex(idx);
             }
         }
-
     }
 
     void MoveByIndex(int index)

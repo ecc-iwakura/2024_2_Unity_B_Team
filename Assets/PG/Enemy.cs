@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     private ScoreManager score;
+    public static bool des=false;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,8 +34,9 @@ public class Enemy : MonoBehaviour
 
         if (collision.gameObject.tag == "Player")
         {
+            des = true;
             Destroy(gameObject);
-            LifeManager.lifePoint--;
+           // LifeManager.lifePoint--;
         }
     }
 }
