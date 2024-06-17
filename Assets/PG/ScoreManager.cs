@@ -8,7 +8,7 @@ public class ScoreManager : MonoBehaviour
 {
     public GameObject score_object = null; // Textオブジェクト
     public static int score_num = 0; // スコア変数
-   // ublic string resetSceneName = "MainScene"; // スコアをリセットするシーンの名前
+   // ublic string resetSceneName = "MainScene";  スコアをリセットするシーンの名前
 
     //// 初期化
     //void Start()
