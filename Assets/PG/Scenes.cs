@@ -11,6 +11,10 @@ public class Scenes : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             SceneManager.LoadScene(sceneName);
+
+            ScoreManager.score_num = 0;
+
+            LifeManager.lifePoint = 3;
         }
     }
 }
