@@ -4,8 +4,6 @@ using UnityEngine;
  
 public class enemy_StraightMove : MonoBehaviour
 {
-
-
     void Update()
     {
         // （ポイント）マイナスをかけることで逆方向に移動する。

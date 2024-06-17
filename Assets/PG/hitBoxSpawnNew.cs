@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class hitBoxSpawnNew : MonoBehaviour
 {
-    public GameObject hitBox;
+    public GameObject hitBox1;
     public Transform Position;
 
     float reloadTime; // リロードにかかる時間
-    int bullets;
     // Start is called before the first frame update
     void Start()
     {
-        bullets = 1;
         reloadTime = 0.0f;
     }
 
@@ -21,11 +19,10 @@ public class hitBoxSpawnNew : MonoBehaviour
     {
         if (reloadTime <= 0.0f)
         {
-            // マウス左クリック
+            
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                Instantiate(hitBox, Position.position, Position.rotation);
-   
+                Instantiate(hitBox1, Position.position, Position.rotation);
              // リロード時間セット
              reloadTime = 1.0f;
             }
@@ -35,13 +32,6 @@ public class hitBoxSpawnNew : MonoBehaviour
         {
             // リロード時間カウントダウン
             reloadTime -= Time.deltaTime;
-
-            // リロード時間が０秒以下になったら
-            if (reloadTime <= 0.0f)
-            {
-                // 弾を補充
-                bullets = 1;
-            }
         }
     }
 }

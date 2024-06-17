@@ -14,17 +14,12 @@ public class RandomSpwn : MonoBehaviour
 
     private int r;
     private int spawnIndex;
+    public float waitTime = 1.0f;
 
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(Spawn());
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     private IEnumerator Spawn()
@@ -61,21 +56,7 @@ public class RandomSpwn : MonoBehaviour
 
                     break;
             }
-            yield return new WaitForSeconds(1.5f); // 1.5秒待機
+            yield return new WaitForSeconds(waitTime); // x秒待機
         }
-        //            if (r == 2)
-        //            {
-        //                Instantiate(Enemy, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation);
-        //            }
-        //            else if (r == 3)
-        //            {
-        //                Instantiate(Enemy2, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation);
-        //            }
-        //            else if (r == 4)
-        //            {
-        //                Instantiate(Enemy3, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation); // 新しいゲームオブジェクトを生成
-        //            }
-        //            yield return new WaitForSeconds(1f); // 1秒待機
-        //        }
     }
 }

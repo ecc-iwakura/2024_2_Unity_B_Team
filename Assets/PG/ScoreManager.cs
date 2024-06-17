@@ -8,7 +8,7 @@ public class ScoreManager : MonoBehaviour
 {
     public GameObject score_object = null; // Textオブジェクト
     public static int score_num = 0; // スコア変数
-    public string resetSceneName = "MainScene1"; // スコアをリセットするシーンの名前
+    public string resetSceneName = "GameOverScene"; // スコアをリセットするシーンの名前
 
     // 初期化
     void Start()
@@ -32,7 +32,7 @@ public class ScoreManager : MonoBehaviour
         score_num += score;
     }
 
-    // シーンがロードされた時に呼び出されるメソッド
+    //シーンがロードされた時に呼び出されるメソッド
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         // 指定されたシーンに移動したときだけスコアをリセット

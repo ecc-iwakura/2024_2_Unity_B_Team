@@ -5,7 +5,9 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     private ScoreManager score;
-    public static bool des=false;
+    public static bool des = false;
+    public GameObject ObjectZan;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,30 +15,29 @@ public class Enemy : MonoBehaviour
         LifeManager lifePoint = FindObjectOfType<LifeManager>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Any enemy-specific logic can go here
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "hit box")
+        if (collision.CompareTag(gameObject.tag))
         {
             score.AddScore(1);
             Destroy(gameObject);
         }
-
-        if (collision.gameObject.tag == "Enemy_deathBox")
+        else
+        {
+            // Ignore collision if tags are different
+            Physics2D.IgnoreCollision(collision, GetComponent<Collider2D>());
+        }
+        if (collision.gameObject.CompareTag("Enemy_deathBox"))
         {
             Destroy(gameObject);
         }
+    }
 
-        if (collision.gameObject.tag == "Player")
+    private void OnDestroy()
+    {
+        if (ObjectZan != null)
         {
-            des = true;
-            Destroy(gameObject);
-           // LifeManager.lifePoint--;
+            Instantiate(ObjectZan, transform.position, transform.rotation);
         }
     }
 }

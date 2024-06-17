@@ -17,12 +17,12 @@ public class hitBox : MonoBehaviour
         }
     }
 
-    // 当たり判定
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player")) // プレイヤーに当たった場合
-        {
-            Destroy(gameObject); // 弾丸を破棄
-        }
-    }
+    //// 当たり判定
+    //void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    if (other.CompareTag("Player")) // プレイヤーに当たった場合
+    //    {
+    //        Destroy(gameObject); // 弾丸を破棄
+    //    }
+    //}
 }

@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Lesult.unity
     guid: 629b97538ce57734c9bb94f75dd2eb9f
   - enabled: 1
-    path: Assets/Scenes/MainScene1.unity
+    path: Assets/Scenes/MainScene.unity
     guid: 47018ffa2e23033459f9fa55a84d522f
   m_configObjects: {}
