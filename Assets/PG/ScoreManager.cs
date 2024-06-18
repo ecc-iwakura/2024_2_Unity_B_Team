@@ -8,14 +8,13 @@ public class ScoreManager : MonoBehaviour
 {
     public GameObject score_object = null; // Textオブジェクト
     public static int score_num = 0; // スコア変数
-   // ublic string resetSceneName = "MainScene";  スコアをリセットするシーンの名前
-
-    //// 初期化
-    //void Start()
-    //{
-    //    // シーン遷移のイベントリスナーを登録
-    //    SceneManager.sceneLoaded += OnSceneLoaded;
-    //}
+    
+    //初期化
+    void Start()
+    {
+        //シーン遷移のイベントリスナーを登録
+        //SceneManager.sceneLoaded += OnSceneLoaded;
+    }
 
     // 更新
     void Update()
@@ -31,21 +30,4 @@ public class ScoreManager : MonoBehaviour
     {
         score_num += score;
     }
-
-    ////シーンがロードされた時に呼び出されるメソッド
-    //void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    //{
-    //    // 指定されたシーンに移動したときだけスコアをリセット
-    //    if (scene.name == resetSceneName)
-    //    {
-    //        score_num = 0;
-    //    }
-    //}
-
-    //// オブジェクトが破棄される時に呼び出されるメソッド
-    //void OnDestroy()
-    //{
-    //    // シーン遷移のイベントリスナーを解除
-    //    SceneManager.sceneLoaded -= OnSceneLoaded;
-    //}
 }

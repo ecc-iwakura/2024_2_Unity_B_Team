@@ -18,10 +18,8 @@ public class zikki_anime : MonoBehaviour
     void Update()
     {
         //もし、スペースキーが押されたらなら
-        if (Input.GetKey(KeyCode.Space))
-        {
-            anime.SetBool("kougeki", true);
-        }
+        if (Input.GetKey(KeyCode.Space)) anime.SetBool("kougeki", true);
+       
     }
     void Func1()
     {

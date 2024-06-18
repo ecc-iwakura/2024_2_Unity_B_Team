@@ -4,18 +4,16 @@ using UnityEngine.SceneManagement;
 
 public class RandomSpwn : MonoBehaviour
 {
-    public GameObject Enemy;
-    public GameObject Enemy2;
-    public GameObject Enemy3;
-    public GameObject Enemy4;
-    public GameObject Enemy5;
-    public GameObject Enemy6;
+    public GameObject Enemy1, Enemy2, Enemy3, Enemy4, Enemy5, Enemy6;
     public Transform[] spawnPoints; // ê∂ê¨èÍèäÇÃîzóÒ
 
     private int r;
     private int spawnIndex;
-    public float waitTime = 1.0f;
 
+
+    public float waitTime = 1.0f;//ê∂ê¨ÇÃÉfÉBÉåÉC
+    public float ShortenTime = 1.0f;//waitTimeÇíZèkÇ∑ÇÈ
+    public float minimum =1.0f;//ê∂ê¨ä‘äuÇÃç≈è¨íl
     // Start is called before the first frame update
     void Start()
     {
@@ -38,25 +36,36 @@ public class RandomSpwn : MonoBehaviour
             switch (r)
             {
                 case 1:
-                    Instantiate(Enemy, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation);
+                    Instantiate(Enemy1, spawnPoints[spawnIndex].position,
+                                        spawnPoints[spawnIndex].rotation);
                     break;
                 case 2:
-                    Instantiate(Enemy2, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation);
+                    Instantiate(Enemy2, spawnPoints[spawnIndex].position,
+                                        spawnPoints[spawnIndex].rotation);
                     break;
                 case 3:
-                    Instantiate(Enemy3, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation);
+                    Instantiate(Enemy3, spawnPoints[spawnIndex].position,
+                                        spawnPoints[spawnIndex].rotation);
                     break;
                 case 4:
-                    Instantiate(Enemy4, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation);
+                    Instantiate(Enemy4, spawnPoints[spawnIndex].position,
+                                        spawnPoints[spawnIndex].rotation);
                     break;
                 case 5:
-                    Instantiate(Enemy5, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation);
+                    Instantiate(Enemy5, spawnPoints[spawnIndex].position,
+                                        spawnPoints[spawnIndex].rotation);
                     break;
                 case 6:
-                    Instantiate(Enemy6, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation);
+                    Instantiate(Enemy6, spawnPoints[spawnIndex].position,
+                                        spawnPoints[spawnIndex].rotation);
                     break;
             }
-            yield return new WaitForSeconds(waitTime); // wait for the specified time before spawning the next enemy
+
+            waitTime -= ShortenTime; // waitTimeÇæÇÒÇæÇÒÇíZèkÇ∑ÇÈ
+
+            if (waitTime < minimum) waitTime = minimum;
+
+            yield return new WaitForSeconds(waitTime);//ê∂ê¨ÇÃÉfÉBÉåÉC
         }
     }
 }

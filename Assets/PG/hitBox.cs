@@ -11,18 +11,7 @@ public class hitBox : MonoBehaviour
     {
         // ’eŠÛ‚ð”jŠü‚·‚é
         lifeTime -= Time.deltaTime;
-        if (lifeTime <= 0)
-        {
-            Destroy(gameObject);
-        }
+        if (lifeTime <= 0) Destroy(gameObject);
+        
     }
-
-    //// “–‚½‚è”»’è
-    //void OnTriggerEnter2D(Collider2D other)
-    //{
-    //    if (other.CompareTag("Player")) // ƒvƒŒƒCƒ„[‚É“–‚½‚Á‚½ê‡
-    //    {
-    //        Destroy(gameObject); // ’eŠÛ‚ð”jŠü
-    //    }
-    //}
 }

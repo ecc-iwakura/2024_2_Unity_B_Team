@@ -36,10 +36,8 @@ public class LifeManager : MonoBehaviour
             lifeArray[lifePoint - 1].SetActive(false);
             lifePoint--;
 
-            if (lifePoint <= 0)
-            {
-                SceneManager.LoadScene("Lesult");
-            }
+            if (lifePoint <= 0) SceneManager.LoadScene("Lesult");
+            
         }
     }
 }
