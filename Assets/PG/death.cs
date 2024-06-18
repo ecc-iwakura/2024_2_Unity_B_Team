@@ -14,10 +14,8 @@ public class death : MonoBehaviour
         transform.Translate(-5 * Time.deltaTime, 0, 0);
 
         lifeTime -= Time.deltaTime;
-        if (lifeTime <= 0)
-        {
-            Destroy(gameObject);
-        }
+        if (lifeTime <= 0) Destroy(gameObject);
+     
     }
     private void OnEnable()
     {

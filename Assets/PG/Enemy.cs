@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -7,7 +8,7 @@ public class Enemy : MonoBehaviour
     private ScoreManager score;
     public static bool des = false;
     public GameObject ObjectZan;
-
+    private AudioSource sound1;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class Enemy : MonoBehaviour
         {
             score.AddScore(1);
             Destroy(gameObject);
+            sound1.PlayOneShot(sound1.clip);
         }
         else
         {

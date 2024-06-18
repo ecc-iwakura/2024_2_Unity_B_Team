@@ -4,13 +4,17 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - hitBox
   - Enemy1
   - Enemy2
   - Enemy3
-  - hit box
   - Life
   - Enemy_deathBox
+  - Player1
+  - Player2
+  - Player3
+  - hitBox1
+  - hitBox2
+  - hitBox3
   layers:
   - Default
   - TransparentFX
