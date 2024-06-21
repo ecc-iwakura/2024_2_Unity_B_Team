@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
 
         //ƒvƒŒƒCƒ„[‚ÌˆÚ“®ˆ—
         {
-            if (Input.GetKeyDown(KeyCode.W))
+            if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 if (idx > 0)
                 {
@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
                     MoveByIndex(idx);
                 }
             }
-            if (Input.GetKeyDown(KeyCode.S))
+            if (Input.GetKeyDown(KeyCode.DownArrow))
             {
                 if (idx < 2)
                 {
