@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2714557001899348617}
   - component: {fileID: 4499628530983083138}
   - component: {fileID: -3345317937528586860}
+  - component: {fileID: -3751545783830975815}
   m_Layer: 0
   m_Name: 3_Photo_zan
   m_TagString: Untagged
@@ -120,3 +121,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 3
+--- !u!114 &-3751545783830975815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4854787390388449827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 338a5e9f87495e948a43f649c16fd608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDuration: 1.5

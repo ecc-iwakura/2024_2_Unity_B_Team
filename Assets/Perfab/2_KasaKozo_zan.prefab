@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2802392136494869153}
   - component: {fileID: 2802392136494869158}
   - component: {fileID: 2339841400684136922}
+  - component: {fileID: 8676379469008066221}
   m_Layer: 0
   m_Name: 2_KasaKozo_zan
   m_TagString: Untagged
@@ -120,3 +121,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 3
+--- !u!114 &8676379469008066221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2802392136494869159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 338a5e9f87495e948a43f649c16fd608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDuration: 1.5
