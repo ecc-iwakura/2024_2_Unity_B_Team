@@ -33,11 +33,11 @@ public class PlayerController : MonoBehaviour
     {
         // 1～3のキーを押したら対応する武器を切り替える
         {
-            if (Input.GetKeyDown(KeyCode.Alpha1) && weaponDataes.Length >= 1) SwitchWeapon(0);
+            if (Input.GetKeyDown(KeyCode.A) && weaponDataes.Length >= 1) SwitchWeapon(0);
 
-            if (Input.GetKeyDown(KeyCode.Alpha2) && weaponDataes.Length >= 2) SwitchWeapon(1);
+            if (Input.GetKeyDown(KeyCode.S) && weaponDataes.Length >= 2) SwitchWeapon(1);
 
-            if (Input.GetKeyDown(KeyCode.Alpha3) && weaponDataes.Length >= 3) SwitchWeapon(2);
+            if (Input.GetKeyDown(KeyCode.D) && weaponDataes.Length >= 3) SwitchWeapon(2);
 
             // スペースキーを押したら選択している武器を生成する
             if (Input.GetKeyDown(KeyCode.Space)) GenerateCurrentWeapon();

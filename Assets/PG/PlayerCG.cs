@@ -20,9 +20,9 @@ public class PlayerCG : MonoBehaviour
     void Update()
     {
         // キーが押されたかどうかを確認し、bool変数を更新する
-        isKeyPressed1 = Input.GetKeyDown(KeyCode.Alpha1);
-        isKeyPressed2 = Input.GetKeyDown(KeyCode.Alpha2);
-        isKeyPressed3 = Input.GetKeyDown(KeyCode.Alpha3);
+        isKeyPressed1 = Input.GetKeyDown(KeyCode.A);
+        isKeyPressed2 = Input.GetKeyDown(KeyCode.S);
+        isKeyPressed3 = Input.GetKeyDown(KeyCode.D);
 
         // それぞれのbool変数に基づいてイラストを切り替える
         if (isKeyPressed1)
@@ -43,6 +43,5 @@ public class PlayerCG : MonoBehaviour
             illustration2.gameObject.SetActive(false);
             illustration3.gameObject.SetActive(true);
         }
-
     }
 }
