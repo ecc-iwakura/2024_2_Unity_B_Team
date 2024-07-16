@@ -19,10 +19,9 @@ public class Bomb : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("hitBox1") ||
-        collision.gameObject.CompareTag("hitBox2") ||
-        collision.gameObject.CompareTag("hitBox3"))
+            collision.gameObject.CompareTag("hitBox2") ||
+            collision.gameObject.CompareTag("hitBox3"))
         {
-            //lifePoint--;
             Destroy(gameObject);
             if (ObjectZan != null)
             {
