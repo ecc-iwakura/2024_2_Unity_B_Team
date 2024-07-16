@@ -12,6 +12,5 @@ public class hitBox : MonoBehaviour
         // ’eŠÛ‚ğ”jŠü‚·‚é
         lifeTime -= Time.deltaTime;
         if (lifeTime <= 0) Destroy(gameObject);
-        
     }
 }

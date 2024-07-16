@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class zikki_anime : MonoBehaviour
+public class AnimeA : MonoBehaviour
 {
     //===== ’è‹`—Ìˆæ =====
     private Animator anime;  //Animator‚ğanim‚Æ‚¢‚¤•Ï”‚Å’è‹`‚·‚é

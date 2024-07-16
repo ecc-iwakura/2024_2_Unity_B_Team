@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy3 : MonoBehaviour
 {
     private ScoreManager score;
     public static bool des = false;
@@ -18,11 +18,14 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag(gameObject.tag))
+        if (collision.gameObject.CompareTag("hitBox3"))
         {
             score.AddScore(1);
             Destroy(gameObject);
-            sound1.PlayOneShot(sound1.clip);
+            if (ObjectZan != null)
+            {
+                Instantiate(ObjectZan, transform.position, transform.rotation);
+            }
         }
         else
         {
@@ -32,14 +35,6 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy_deathBox"))
         {
             Destroy(gameObject);
-        }
-    }
-
-    private void OnDestroy()
-    {
-        if (ObjectZan != null)
-        {
-            Instantiate(ObjectZan, transform.position, transform.rotation);
         }
     }
 }
