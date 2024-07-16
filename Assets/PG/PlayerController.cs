@@ -120,7 +120,7 @@ public class PlayerController : MonoBehaviour
     {
         GameObject[] objectsToDestroy = GameObject.FindGameObjectsWithTag(tagToDestroy);
 
-        foreach (GameObject obj in objectsToDestroy) Destroy(obj); 
+        foreach (GameObject obj in objectsToDestroy) Destroy(obj);
     }
 
     void MoveByIndex(int index)
