@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class LifeManager : MonoBehaviour
 {
     public static int lifePoint = 3;
-    public GameObject[] lifeArray = new GameObject[3];
+    public static GameObject[] lifeArray = new GameObject[3];
 
     void Start()
     {
