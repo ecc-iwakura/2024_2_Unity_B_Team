@@ -15,7 +15,7 @@ public class death : MonoBehaviour
 
         lifeTime -= Time.deltaTime;
         if (lifeTime <= 0) Destroy(gameObject);
-     
+
     }
     private void OnEnable()
     {

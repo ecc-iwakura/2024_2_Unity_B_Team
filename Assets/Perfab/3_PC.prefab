@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2890185587863344471}
   - component: {fileID: 2890185587863344468}
-  - component: {fileID: 2890185587863344469}
+  - component: {fileID: 867212907641133011}
   - component: {fileID: 2890185587863344466}
   - component: {fileID: 5086952931198487226}
   - component: {fileID: 2472016837363902117}
@@ -90,7 +90,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2890185587863344469
+--- !u!114 &867212907641133011
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2890185587863344467}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b41500941b1b788419613260fedcbd39, type: 3}
+  m_Script: {fileID: 11500000, guid: 1554f2a24445203459007b9599db0155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectZan: {fileID: 3413213475644721653, guid: f3de2c71ba7846548a875e0148c92b62, type: 3}
@@ -116,6 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8033a35b08b92543859a8e4414a6479, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minimumDistance: 4
 --- !u!50 &5086952931198487226
 Rigidbody2D:
   serializedVersion: 4

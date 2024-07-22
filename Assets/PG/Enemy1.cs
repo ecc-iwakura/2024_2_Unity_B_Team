@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy1 : MonoBehaviour
 {
     private ScoreManager score;
     public static bool des = false;
@@ -20,10 +20,11 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag(gameObject.tag))
+        if (collision.gameObject.CompareTag("hitBox1"))
         {
             score.AddScore(1);
             Destroy(gameObject);
+<<<<<<< HEAD:Assets/PG/Enemy.cs
             Destroy(collision.gameObject);
             if (sound1 != null && sound1.clip != null)
             {
@@ -34,6 +35,11 @@ public class Enemy : MonoBehaviour
             if (hitPrefab != null)
             {
                 Instantiate(hitPrefab, collision.transform.position, Quaternion.identity);
+=======
+            if (ObjectZan != null)
+            {
+                Instantiate(ObjectZan, transform.position, transform.rotation);
+>>>>>>> 2fd6b0a7f545e1beb41e5a5cb49d76d51caacc0a:Assets/PG/Enemy1.cs
             }
         }
         else
@@ -45,14 +51,6 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy_deathBox"))
         {
             Destroy(gameObject);
-        }
-    }
-
-    private void OnDestroy()
-    {
-        if (ObjectZan != null)
-        {
-            Instantiate(ObjectZan, transform.position, transform.rotation);
         }
     }
 }
