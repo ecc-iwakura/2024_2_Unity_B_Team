@@ -103,6 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectZan: {fileID: 2566113766071325524, guid: 00e6a28362938ab4882e13f0bf2f9dd5, type: 3}
+  hitPrefab: {fileID: 5057656275694258538, guid: be6c09be1b8fe2246b9240d14321afa4, type: 3}
 --- !u!114 &2468124460622776146
 MonoBehaviour:
   m_ObjectHideFlags: 0

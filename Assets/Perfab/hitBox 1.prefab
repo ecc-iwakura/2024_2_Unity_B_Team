@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 0.2
+  missPrefab: {fileID: 9158818863273682200, guid: c1e9b27b9502b0d4d8fa6ff88fe76c9f, type: 3}
 --- !u!95 &5746058858383416188
 Animator:
   serializedVersion: 5

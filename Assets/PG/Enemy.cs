@@ -8,12 +8,14 @@ public class Enemy : MonoBehaviour
     private ScoreManager score;
     public static bool des = false;
     public GameObject ObjectZan;
+    public GameObject hitPrefab;
     private AudioSource sound1;
-    // Start is called before the first frame update
+
     void Start()
     {
         score = FindObjectOfType<ScoreManager>();
         LifeManager lifePoint = FindObjectOfType<LifeManager>();
+        sound1 = GetComponent<AudioSource>(); // AudioSource を取得する
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -22,13 +24,24 @@ public class Enemy : MonoBehaviour
         {
             score.AddScore(1);
             Destroy(gameObject);
-            sound1.PlayOneShot(sound1.clip);
+            Destroy(collision.gameObject);
+            if (sound1 != null && sound1.clip != null)
+            {
+                sound1.PlayOneShot(sound1.clip); // 音声を再生する
+            }
+
+            // Hit プレファブを表示させる
+            if (hitPrefab != null)
+            {
+                Instantiate(hitPrefab, collision.transform.position, Quaternion.identity);
+            }
         }
         else
         {
             // Ignore collision if tags are different
             Physics2D.IgnoreCollision(collision, GetComponent<Collider2D>());
         }
+
         if (collision.gameObject.CompareTag("Enemy_deathBox"))
         {
             Destroy(gameObject);
@@ -43,4 +56,3 @@ public class Enemy : MonoBehaviour
         }
     }
 }
-
