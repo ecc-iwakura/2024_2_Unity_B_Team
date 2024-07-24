@@ -100,7 +100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 0.2
-<<<<<<< HEAD
   missPrefab: {fileID: 9158818863273682200, guid: c1e9b27b9502b0d4d8fa6ff88fe76c9f, type: 3}
 --- !u!95 &5746058858383416188
 Animator:
@@ -135,8 +134,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469bad3bab8825f499501dd0388d5895, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
->>>>>>> 2fd6b0a7f545e1beb41e5a5cb49d76d51caacc0a
 --- !u!61 &1756761707051716448
 BoxCollider2D:
   m_ObjectHideFlags: 0

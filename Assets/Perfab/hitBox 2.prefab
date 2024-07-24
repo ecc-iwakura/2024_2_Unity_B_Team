@@ -126,9 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 0.2
-<<<<<<< HEAD
   missPrefab: {fileID: 9158818863273682200, guid: c1e9b27b9502b0d4d8fa6ff88fe76c9f, type: 3}
-=======
 --- !u!50 &-39899864497582849
 Rigidbody2D:
   serializedVersion: 4
@@ -150,4 +148,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
->>>>>>> 2fd6b0a7f545e1beb41e5a5cb49d76d51caacc0a
