@@ -13,6 +13,7 @@ public class hitBox : MonoBehaviour
     {
         // ’eŠÛ‚ð”jŠü‚·‚é
         lifeTime -= Time.deltaTime;
+<<<<<<< HEAD
         if (lifeTime <= 0 && !destroyed)
         {
             destroyed = true; // ƒtƒ‰ƒO‚ðÝ’è‚µ‚Ä“ñd¶¬‚ð–hŽ~
@@ -27,5 +28,8 @@ public class hitBox : MonoBehaviour
         {
             Instantiate(missPrefab, transform.position, Quaternion.identity);
         }
+=======
+        if (lifeTime <= 0) Destroy(gameObject);
+>>>>>>> 2fd6b0a7f545e1beb41e5a5cb49d76d51caacc0a
     }
 }
