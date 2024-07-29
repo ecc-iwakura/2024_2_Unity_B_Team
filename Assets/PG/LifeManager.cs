@@ -14,11 +14,33 @@ public class LifeManager : MonoBehaviour
     }
     private void Update()
     {
-        if (Enemy.des == true)
+        if (Enemy1.des== true)
         {
             lifeArray[lifePoint - 1].SetActive(false);
             lifePoint--;
-            Enemy.des = false;
+            Enemy1.des = false;
+
+            if (lifePoint <= 0)
+            {
+                SceneManager.LoadScene("Lesult");
+            }
+        }
+        if (Enemy2.des == true)
+        {
+            lifeArray[lifePoint - 1].SetActive(false);
+            lifePoint--;
+            Enemy2.des = false;
+
+            if (lifePoint <= 0)
+            {
+                SceneManager.LoadScene("Lesult");
+            }
+        }
+        if (Enemy3.des == true)
+        {
+            lifeArray[lifePoint - 1].SetActive(false);
+            lifePoint--;
+            Enemy3.des = false;
 
             if (lifePoint <= 0)
             {

@@ -27,5 +27,6 @@ public class hitBox : MonoBehaviour
         {
             Instantiate(missPrefab, transform.position, Quaternion.identity);
         }
+        if (lifeTime <= 0) Destroy(gameObject);
     }
 }

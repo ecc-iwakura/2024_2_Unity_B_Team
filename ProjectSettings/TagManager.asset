@@ -11,6 +11,10 @@ TagManager:
   - hit box
   - Life
   - Enemy_deathBox
+  - hitBox1
+  - hitBox2
+  - hitBox3
+  - bomb
   layers:
   - Default
   - TransparentFX
