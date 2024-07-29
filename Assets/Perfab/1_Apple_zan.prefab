@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 8670135644890023001}
   - component: {fileID: -8641571917684100584}
   - component: {fileID: -5194190137275117086}
-  - component: {fileID: -2559713472963194791}
   - component: {fileID: -5572337679373162902}
   m_Layer: 0
   m_Name: 1_Apple_zan
@@ -124,19 +123,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeTime: 3
 --- !u!114 &-5194190137275117086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4998612378035427064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 338a5e9f87495e948a43f649c16fd608, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeDuration: 1.5
---- !u!114 &-2559713472963194791
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
