@@ -506,9 +506,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeArray:
-  - {fileID: 896578108}
-  - {fileID: 814455166}
-  - {fileID: 1521891368}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!212 &378734771
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2106,16 +2106,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy1: {fileID: 4013140593256790958, guid: 92f0ac2a56f5ef04c81e4b85132d316f, type: 3}
   Enemy2: {fileID: 2468124460622776147, guid: 31b9516d91084884c80d837941c3bf0f, type: 3}
-  Enemy3: {fileID: 5511671793632394512, guid: da867ff1cb85e3d4c814e611eb495e55, type: 3}
-  Enemy4: {fileID: 2097080590642174511, guid: a2084fe2f2a5b074d9312173cd3e5d9f, type: 3}
-  Enemy5: {fileID: 5252855552865089626, guid: b8ee5a59abe119c4c917cc28fbfc7f80, type: 3}
-  Enemy6: {fileID: 2890185587863344467, guid: 6e9fb32af6b675148b7a93455fc905e5, type: 3}
+  Enemy3: {fileID: 2097080590642174511, guid: a2084fe2f2a5b074d9312173cd3e5d9f, type: 3}
+  Enemy4: {fileID: 5511671793632394512, guid: da867ff1cb85e3d4c814e611eb495e55, type: 3}
+  Enemy5: {fileID: 2890185587863344467, guid: 6e9fb32af6b675148b7a93455fc905e5, type: 3}
+  Enemy6: {fileID: 5252855552865089626, guid: b8ee5a59abe119c4c917cc28fbfc7f80, type: 3}
   spawnPoints:
   - {fileID: 799682593}
   - {fileID: 561152722}
   - {fileID: 295904140}
   waitTime: 1.8
-  ShortenTime: 0
+  ShortenTime: 1
   minimum: 0.8
 --- !u!4 &2106529071
 Transform:
